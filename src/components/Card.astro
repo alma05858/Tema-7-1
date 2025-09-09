@@ -4,10 +4,22 @@ const { img, title, body, link} = Astro.props;
 import "../styles/styles.css";
 ---
           
-          <li>
+          <li class="tag">
             <img src={img} alt={title} />
             <h3>{title}</h3>
             <p>{body}</p>
 
               <Button link={link} />
           </li>
+
+          <style>
+
+            img {
+                min-width: 100%;
+            }
+
+p {
+    display: inline;
+}
+
+          </style>
