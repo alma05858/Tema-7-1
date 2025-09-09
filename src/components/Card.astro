@@ -1,0 +1,12 @@
+---
+import Button from "./Button.astro"
+const { title, body, link} = Astro.props;
+---
+          
+          <li>
+            <img src="/imgs/computer-cutout.webp" alt="Billede af computer">
+            <h3>{title}</h3>
+            <p>{body}</p>
+
+              <Button link={link} />
+          </li>
