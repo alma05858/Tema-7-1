@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+.grid_1_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

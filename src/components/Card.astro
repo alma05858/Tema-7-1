@@ -1,10 +1,11 @@
 ---
 import Button from "./Button.astro"
-const { title, body, link} = Astro.props;
+const { img, title, body, link} = Astro.props;
+import "../styles/styles.css";
 ---
           
           <li>
-            <img src="/imgs/computer-cutout.webp" alt="Billede af computer">
+            <img src={img} alt={title} />
             <h3>{title}</h3>
             <p>{body}</p>
 
