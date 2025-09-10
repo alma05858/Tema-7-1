@@ -1,0 +1,36 @@
+---
+import ScrollComponent from "./ScrollComponent.astro"
+---
+
+<div class="matcha-spots">
+
+    <h1>Copenhagen matcha spots</h1>
+
+    <div class="scroll-bar">
+
+        <ScrollComponent img="/imgs/matcha-mori.webp" link="https://www.instagram.com/dallas.cph/?hl=da" cafe="Dallas" beskrivelse="hyggelig cafe på østerbro"></ScrollComponent>
+        <ScrollComponent img="/imgs/matcha-freds.webp" link="https://www.instagram.com/fredscph/?hl=en" cafe="Freds" beskrivelse="hyggelig cafe tæt ved rådhuspladsen"></ScrollComponent>
+        <ScrollComponent img="/imgs/matcha-random.webp" link="https://www.instagram.com/fredscph/?hl=en" cafe="Random" beskrivelse="random spot idk"></ScrollComponent>
+        <ScrollComponent img="/imgs/matcha-random2.webp" link="https://www.instagram.com/fredscph/?hl=en" cafe="Random" beskrivelse="random spot idk"></ScrollComponent>
+        <ScrollComponent img="/imgs/matcha-freds2.webp" link="https://www.instagram.com/fredscph/?hl=en" cafe="Freds" beskrivelse="hyggelig cafe tæt ved rådhuspladsen"></ScrollComponent>
+       <ScrollComponent img="/imgs/matcha-freds.webp" link="https://www.instagram.com/fredscph/?hl=en" cafe="Freds" beskrivelse="hyggelig cafe tæt ved rådhuspladsen"></ScrollComponent>
+    </div>
+
+
+    <style>
+
+.scroll-bar {
+display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+
+
+
+    </style>
+
+</div>
