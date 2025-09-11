@@ -1,9 +1,10 @@
 ---
 import Button from "./Button.astro"
-const { img, title, body, link} = Astro.props;
+const { variant, img, title, body, link} = Astro.props;
 import "../styles/styles.css";
 ---
           
+<section class={variant}>
 <li class="tag">
 <img src={img} alt={title} />
 <h3>{title}</h3>
@@ -12,7 +13,14 @@ import "../styles/styles.css";
 <Button link={link} />
 </li>
 
+</section>
+
 <style>
+
+variant {
+  
+}
+
 
 img {
   min-width: 100%;

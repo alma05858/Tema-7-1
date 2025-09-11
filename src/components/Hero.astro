@@ -1,5 +1,6 @@
 ---
 import Button from "./Button.astro"
+import Card from "./Card.astro"
 ---
       <header>
         <div class="content">
@@ -13,4 +14,25 @@ import Button from "./Button.astro"
         <figure>
           <img src="/imgs/image.jpg" width="400" alt="" />
         </figure>
+
+
+        <div>
+        <ul class="grid_1_1_1_2">
+          <div class="flex_1_column">
+            <Card img="/imgs/computer-cutout.webp" title="Bing Bong" body="lorem......Lorom" link="/animation"></Card>
+            <Card img="/imgs/computer-cutout.webp" title="Bing Bong" body="lorem......Lorom" link="/animation"></Card>
+            <Card img="/imgs/computer-cutout.webp" title="Bing Bong" body="lorem......Lorom" link="/animation"></Card>
+            </div>
+            <Card variant="featured" img="/imgs/computer-cutout.webp" title="Bing Bong" body="lorem......Lorom" link="/animation"></Card>
+        </ul>
+        </div>
       </header>
+
+      <style>
+.featured {
+  
+}
+
+
+
+      </style>
