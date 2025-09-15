@@ -1,33 +1,28 @@
 ---
-import Button from "./Button.astro"
-const { variant, img, title, body, link} = Astro.props;
+import Button from "./Button.astro";
+const { variant, img, title, body, link } = Astro.props;
 import "../styles/styles.css";
 ---
-          
+
 <section class={variant}>
-<li class="tag">
-<img src={img} alt={title} />
-<h3>{title}</h3>
-<p>{body}</p>
+  <li class="tag">
+    <img src={img} alt={title} />
+    <h3>{title}</h3>
+    <p>{body}</p>
 
-<Button link={link} />
-</li>
-
+    <Button link={link} />
+  </li>
 </section>
 
 <style>
+  variant {
+  }
 
-variant {
-  
-}
+  img {
+    min-width: 100%;
+  }
 
-
-img {
-  min-width: 100%;
-}
-
-p {
-  display: inline;
-}
-
+  p {
+    display: inline;
+  }
 </style>
