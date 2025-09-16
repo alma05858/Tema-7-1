@@ -2,12 +2,22 @@
 import "../styles/styles.css";
 ---
 
-<div class="grid_1_1">
-  <img src="/imgs/computer-old.webp" alt="Reel af studenterhuset" />
-  <div>
-    <h1>Velkommen til studenterhuset</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque ipsam, inventore commodi praesentium deserunt officia ipsa exercitationem obcaecati dicta minima numquam debitis! Earum exercitationem optio obcaecati facilis natus eum sapiente.</p>
-  </div>
-</div>
+<section class="reel-section">
+  <div class="grid_1_1">
+    <video width="640" height="360" controls>
+      <source src="/videoer/studenterhuset.mp4" type="video/mp4" />
+    </video>
 
-<style></style>
+    <div>
+      <h1>Velkommen til studenterhuset</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque ipsam, inventore commodi praesentium deserunt officia ipsa exercitationem obcaecati dicta minima numquam debitis! Earum exercitationem optio obcaecati facilis natus eum sapiente.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .reel-section {
+    color: #ffffff;
+    background-color: #fb4f4f;
+  }
+</style>

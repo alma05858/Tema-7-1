@@ -15,6 +15,8 @@ nav {
 body {
   font-family: sans-serif;
   padding: 2rem;
+  list-style: none;
+  background-color: #fbe6c4;
 }
 
 .flex_1_column {

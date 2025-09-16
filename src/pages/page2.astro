@@ -1,6 +1,8 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
 import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
+import Card from "../components/Card.astro";
 import "../styles/styles.css";
 ---
 
@@ -15,9 +17,18 @@ import "../styles/styles.css";
   </head>
 
   <body>
-    <Navigation />
-    <header>
-      <h1>Side 2</h1>
-    </header>
+    <Header />
+
+    <h1>See here for a quick guide to getting around Copenhagen by public transport.</h1>
+    <img src="/imgs/nyhavn-billede.webp" alt="Billede af nyhavn" />
+
+    <section class="cards">
+      <header>
+        <ul class="grid_1_1_1">
+          <Card img="/imgs/gammeldiamant.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" alt="Test" />
+          <Card img="/imgs/studenterhus.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" />
+        </ul>
+      </header>
+    </section>
   </body>
 </html>

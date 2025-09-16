@@ -1,12 +1,12 @@
 ---
 import Button from "./Button.astro";
-const { variant, img, title, body, link } = Astro.props;
+const { variant, img, alt, title, body, link } = Astro.props;
 import "../styles/styles.css";
 ---
 
 <section class={variant}>
   <li class="tag">
-    <img src={img} alt={title} />
+    <img src={img} alt={alt} />
     <h3>{title}</h3>
     <p>{body}</p>
 

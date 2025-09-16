@@ -1,17 +1,23 @@
 ---
-import Card from "./Card.astro"
+import Card from "./Card.astro";
 import "../styles/styles.css";
 ---
-      
-      <section class="cards">
-        <header>
-          <h2>Check out our most popular courses!</h2>
 
-        <ul class="grid_1_1_1">
-            <Card img="/imgs/computer-cutout.webp" title="Bing Bong" body="lorem......Lorom" link="/animation"></Card>
-            <Card img="/imgs/computer-cutout.webp" title="Bing Bong" body="lorem......Lorom" link="/animation"></Card>
-            <Card img="/imgs/computer-cutout.webp" title="Bing Bong" body="lorem......Lorom" link="/animation"></Card>
-        </ul>
+<section class="cards">
+  <header>
+    <h2>Check out our most popular courses!</h2>
 
+    <ul class="grid_1_1_1">
+      <Card img="/imgs/gammeldiamant.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" alt="Test" />
+      <Card img="/imgs/studenterhus.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" />
+      <Card img="/imgs/hovedbiblo.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" />
+    </ul>
+  </header>
+</section>
 
-      </section>
+<style>
+  .cards {
+    color: #ffffff;
+    background-color: #fb4f4f;
+  }
+</style>

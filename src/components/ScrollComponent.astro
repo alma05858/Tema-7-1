@@ -1,22 +1,17 @@
 ---
-const { img, title, link, beskrivelse, cafe} = Astro.props;
+const { img, title, beskrivelse, cafe } = Astro.props;
 import "../styles/styles.css";
 ---
 
 <div>
-
-<img src={img} alt={title} />
-<a target="_blank" href={link}>{cafe}</a>
-<p>{beskrivelse}</p>
-
+  <img src={img} alt={title} />
+  <h3>{cafe}</h3>
+  <p>{beskrivelse}</p>
 </div>
 
 <style>
-
-div {
+  div {
     flex-shrink: 0;
-     max-width: 300px;
-}
-
-
+    max-width: 300px;
+  }
 </style>

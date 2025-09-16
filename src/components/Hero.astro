@@ -3,33 +3,22 @@ import Button from "./Button.astro";
 import Card from "./Card.astro";
 ---
 
-<header>
-  <div class="content">
-    <h1>Maximize skill, minimize budget</h1>
-    <p>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
-    <a href="/courses" class="btn" data-variant="primary">Get started</a>
-  </div>
-  <figure>
-    <img src="/imgs/image.jpg" width="400" alt="" />
-  </figure>
+<div>
+  <div class="grid_1_1_1_2">
+    <div class="flex_1_column">
+      <Card img="/imgs/5-matcha-fred2.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" />
+      <Card img="/imgs/cykel.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" />
+      <Card img="/imgs/rejsebillet.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" />
+    </div>
 
-  <div>
-    <ul class="grid_1_1_1_2">
-      <div class="flex_1_column">
-        <Card img="/imgs/matcha-freds2.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" />
-        <Card img="/imgs/lucia-cykel.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" />
-        <Card img="/imgs/rejsebillet-app.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" />
-      </div>
-
-      <div>
-        <img src="/imgs/nyhavn-billede.webp" alt="Billede af nyhavn" />
-        <h1>Lucia er sej og har en stor musskel</h1>
-      </div>
-    </ul>
+    <div>
+      <img src="/imgs/nyhavn-billede.webp" alt="Billede af nyhavn" />
+      <h1>Lucia er sej og har en stor musskel</h1>
+    </div>
   </div>
-</header>
+</div>
 
 <style>
-  .featured {
+  .flex_1_column img {
   }
 </style>
