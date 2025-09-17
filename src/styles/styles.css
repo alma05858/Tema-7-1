@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
 }
@@ -14,7 +18,7 @@ nav {
 
 body {
   font-family: sans-serif;
-  padding: 2rem;
+
   list-style: none;
   background-color: #fbe6c4;
 }
@@ -40,8 +44,9 @@ body {
 
   .grid_1_1_1_2 {
     display: grid;
+    padding: 4rem;
     grid-template-columns: 1fr 2fr;
-    gap: 2rem;
+    gap: 8rem;
   }
 
   .grid_1_1 {
