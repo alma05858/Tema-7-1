@@ -6,19 +6,27 @@ import Card from "./Card.astro";
 <div>
   <div class="grid_1_1_1_2">
     <div class="flex_1_column">
-      <Card img="/imgs/5-matcha-fred2.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" />
-      <Card img="/imgs/cykel.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" />
-      <Card img="/imgs/rejsebillet.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" />
+      <Card img="/imgs/5-matcha-fred2.webp" title="HAVE YOU TRIED MATCHA YET?" link="#matcha-spots" />
+      <Card img="/imgs/cykel.webp" title="WANNA KNOW HOW TO BIKE LIKE A REAL DANE?" link="" />
+      <Card img="/imgs/rejsebillet.webp" title="THE BEST APPS FOR PUBLIC TRANSPORT" link="/page2" />
     </div>
 
     <div>
       <img src="/imgs/nyhavn-billede.webp" alt="Billede af nyhavn" />
-      <h1>Lucia er sej og har en stor musskel</h1>
+      <h1>A PERFECT GUIDE TO NAVIGATE IN COPENHAGENS BUSY STREETS</h1>
     </div>
   </div>
 </div>
 
 <style>
-  .flex_1_column img {
+  h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  a h3 {
+    color: black;
   }
 </style>
