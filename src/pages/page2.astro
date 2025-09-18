@@ -3,6 +3,7 @@ import PageLayout from "../layouts/PageLayout.astro";
 import Navigation from "../components/Navigation.astro";
 import Header from "../components/Header.astro";
 import Card from "../components/Card.astro";
+import Hero2 from "../components/Hero2.astro";
 import "../styles/styles.css";
 ---
 
@@ -13,20 +14,21 @@ import "../styles/styles.css";
     <meta name="”robots”" content="”noindex,nofollow”" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Side 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <title>Copenhagen Transportation</title>
   </head>
 
   <body>
     <Header />
-
-    <h1>See here for a quick guide to getting around Copenhagen by public transport.</h1>
-    <img src="/imgs/nyhavn-billede.webp" alt="Billede af nyhavn" />
+    <Hero2 />
 
     <section class="cards">
       <header>
-        <ul class="grid_1_1_1">
-          <Card img="/imgs/gammeldiamant.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" alt="Test" />
-          <Card img="/imgs/studenterhus.webp" title="Bing Bong" body="lorem......Lorom" link="/animation" />
+        <ul class="grid_1_1">
+          <Card img="/imgs/dsb.webp" title="Dsb app" body="lorem......Lorom" alt="Test" />
+          <Card img="/imgs/rejsebillet.webp" title="Rejsebillet app" body="lorem......Lorom" />
         </ul>
       </header>
     </section>
